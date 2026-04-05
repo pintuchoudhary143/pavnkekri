@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PAVN School Kekri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-header {
+            background: #1a2a6c;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .info-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+            border-bottom: 4px solid #fdbb2d;
+        }
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<header class="contact-header">
+    <div class="container">
+        <h1 class="fw-bold">हमसे संपर्क करें</h1>
+        <p>पटेल आदर्श विद्या निकेतन - आपके हर सवाल का स्वागत है</p>
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="info-box text-center">
+                    <i class="fas fa-map-marker-alt fa-3x text-danger mb-3"></i>
+                    <h4>हमारा पता</h4>
+                    <p class="text-muted">अजमेर मार्ग, केकड़ी,<br>राजस्थान - 305404</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box text-center">
+                    <i class="fas fa-phone-alt fa-3x text-success mb-3"></i>
+                    <h4>फोन नंबर</h4>
+                    <p class="text-muted">+91 92691 65897<br>+91 XXXXXXXXXX</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box text-center">
+                    <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                    <h4>ईमेल</h4>
+                    <p class="text-muted">info@pavnkekri.com<br>support@pavnkekri.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6 mb-4">
+                <div class="map-container h-100">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.7548!2d75.15!3d25.96!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU3JzM2LjAiTiA3NcKwMDknMDAuMCJF!5e0!3m2!1sen!2sin!4v1650000000000" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h3 class="mb-4 text-primary">पूछताछ करें</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">आपका नाम</label>
+                            <input type="text" class="form-control" placeholder="यहाँ अपना नाम लिखें">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">ईमेल या फोन</label>
+                            <input type="text" class="form-control" placeholder="मोबाइल नंबर">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">विषय</label>
+                            <select class="form-select">
+                                <option>प्रवेश (Admission)</option>
+                                <option>फीस संबंधी जानकारी</option>
+                                <option>अन्य</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">आपका संदेश</label>
+                            <textarea class="form-control" rows="4" placeholder="अपना सवाल यहाँ लिखें..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2">संदेश भेजें</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center py-4 bg-dark text-white">
+    <p class="mb-0 small">© 2026 पटेल आदर्श विद्या निकेतन | <a href="index.html" class="text-warning text-decoration-none">होम पेज</a></p>
+</footer>
+
+</body>
+</html>

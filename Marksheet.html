@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card | PAVN School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .report-card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            background: white;
+            overflow: hidden;
+        }
+        
+        .report-header {
+            background: #1a2a6c;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .table-result thead {
+            background: #f8f9fa;
+        }
+        
+        .grade-badge {
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        @media print {
+            .no-print {
+                display: none;
+            }
+            .report-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="d-flex justify-content-between mb-4 no-print">
+            <a href="dashboard.html" class="btn btn-outline-primary rounded-pill"><i class="fas fa-arrow-left me-2"></i>डैशबोर्ड</a>
+            <button onclick="window.print()" class="btn btn-success rounded-pill px-4"><i class="fas fa-print me-2"></i>मार्कशीट प्रिंट करें</button>
+        </div>
+
+        <div class="report-card mx-auto" style="max-width: 900px;">
+            <div class="report-header">
+                <h2 class="fw-bold mb-0">पटेल आदर्श विद्या निकेतन, केकड़ी</h2>
+                <p class="mb-0 opacity-75">अजमेर मार्ग, केकड़ी (राज.) | सत्र 2025-26</p>
+                <hr class="bg-white opacity-25">
+                <h4 class="fw-light mt-2">प्रगति पत्रक (Progress Report)</h4>
+            </div>
+
+            <div class="p-4">
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <p class="mb-1 text-muted small text-uppercase">विद्यार्थी का नाम</p>
+                        <h5 class="fw-bold">पिंटू चौधरी</h5>
+                        <p class="mb-1 text-muted small text-uppercase">पिता का नाम</p>
+                        <h6 class="fw-bold text-secondary">श्री रमेश जी चौधरी</h6>
+                    </div>
+                    <div class="col-6 text-end">
+                        <p class="mb-1 text-muted small text-uppercase">कक्षा / वर्ग</p>
+                        <h5 class="fw-bold">12वीं (विज्ञान)</h5>
+                        <p class="mb-1 text-muted small text-uppercase">SR नंबर</p>
+                        <h6 class="fw-bold text-secondary">PAVN-2026/0425</h6>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-result text-center align-middle">
+                        <thead class="text-secondary small fw-bold">
+                            <tr>
+                                <th>विषय (Subject)</th>
+                                <th>पूर्णांक (Max)</th>
+                                <th>प्राप्तांक (Obtained)</th>
+                                <th>ग्रेड (Grade)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>भौतिक विज्ञान (Physics)</td>
+                                <td>100</td>
+                                <td>92</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td>रसायन विज्ञान (Chemistry)</td>
+                                <td>100</td>
+                                <td>88</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>गणित/जीव विज्ञान (Maths/Bio)</td>
+                                <td>100</td>
+                                <td>95</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td>हिंदी (Hindi)</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>अंग्रेजी (English)</td>
+                                <td>100</td>
+                                <td>82</td>
+                                <td>B+</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-light">
+                            <tr class="fw-bold">
+                                <td>कुल योग (Total)</td>
+                                <td>500</td>
+                                <td class="text-primary fs-5">442 / 500</td>
+                                <td><span class="bg-success text-white grade-badge">A+ (88.4%)</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="mt-4 p-3 bg-light rounded border-start border-primary border-5">
+                    <p class="mb-0"><strong>शिक्षक की टिप्पणी:</strong> पिंटू एक बहुत ही होनहार और अनुशासित छात्र है। विज्ञान विषयों में उसकी पकड़ शानदार है।</p>
+                </div>
+
+                <div class="row mt-5 text-center pt-4">
+                    <div class="col-4">
+                        <hr class="mx-4">
+                        <p class="small fw-bold">कक्षा अध्यापक</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-muted small mb-2">QR Verified</div>
+                        <i class="fas fa-qrcode fa-3x text-dark"></i>
+                    </div>
+                    <div class="col-4">
+                        <hr class="mx-4">
+                        <p class="small fw-bold">प्रधानाचार्य</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-5 text-center text-muted small no-print">
+            डिजिटल रिपोर्टिंग सिस्टम: <b>PJ SYSTEMS</b>
+        </footer>
+    </div>
+
+</body>
+
+</html>

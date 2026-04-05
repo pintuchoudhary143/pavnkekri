@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login | PAVN School Kekri</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        
+        .login-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            color: white;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        .school-logo {
+            font-size: 3rem;
+            color: #fdbb2d;
+            margin-bottom: 10px;
+        }
+        
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 10px;
+            padding: 12px;
+        }
+        
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            box-shadow: none;
+            border-color: #fdbb2d;
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .btn-login {
+            background: #fdbb2d;
+            color: #1a2a6c;
+            font-weight: bold;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        
+        .btn-login:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+        
+        .footer-links a {
+            color: #fdbb2d;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        
+        .pj-credit {
+            font-size: 0.7rem;
+            margin-top: 25px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-card">
+        <div class="school-logo">
+            <i class="fas fa-user-graduate"></i>
+        </div>
+        <h3 class="fw-bold mb-1">छात्र लॉगिन</h3>
+        <p class="small mb-4 opacity-75">पटेल आदर्श विद्या निकेतन, केकड़ी</p>
+
+        <form id="studentLoginForm">
+            <div class="mb-3 text-start">
+                <label class="small mb-1">प्रवेश क्रमांक (SR Number)</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-id-card"></i></span>
+                    <input type="text" id="srNumber" class="form-control" placeholder="उदा. 2026/001" required>
+                </div>
+            </div>
+
+            <div class="mb-3 text-start">
+                <label class="small mb-1">पासवर्ड (जन्म तिथि)</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="password" class="form-control" placeholder="DDMMYYYY" required>
+                </div>
+            </div>
+
+            <a href="dashboard.html" class="btn btn-login shadow">पोर्टल में प्रवेश करें</a>
+        </form>
+
+        <div class="footer-links mt-3 d-flex justify-content-between">
+            <a href="#">पासवर्ड भूल गए?</a>
+            <a href="index.html">वापस होम</a>
+        </div>
+
+        <div class="pj-credit">
+            डिजिटल पार्टनर: <b>PJ SYSTEMS</b>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('studentLoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const sr = document.getElementById('srNumber').value;
+            const pass = document.getElementById('password').value;
+
+            // डेमो लॉगिन क्रेडेंशियल्स (आप इसे बदल सकते हैं)
+            if (sr === "1234" && pass === "25042004") {
+                alert("लॉगिन सफल! आपका डैशबोर्ड लोड हो रहा है...");
+                // यहाँ Dashboard पेज का लिंक डालें
+                window.location.href = "dashboard.html";
+            } else {
+                alert("त्रुटि: गलत SR नंबर या पासवर्ड। कृपया पुनः प्रयास करें।");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

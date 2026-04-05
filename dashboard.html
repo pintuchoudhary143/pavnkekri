@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | PAVN School</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+         :root {
+            --sidebar-bg: #1a2a6c;
+            --body-bg: #f4f7f6;
+        }
+        
+        body {
+            background-color: var(--body-bg);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .sidebar {
+            background: var(--sidebar-bg);
+            min-height: 100vh;
+            color: white;
+            padding-top: 20px;
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            margin: 5px 15px;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        
+        .stat-card {
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .profile-img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse shadow">
+                <div class="position-sticky">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-user-graduate fa-3x text-warning"></i>
+                        <h6 class="mt-2 fw-bold">PAVN पोर्टल</h6>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home me-2"></i> डेशबोर्ड</a></li>
+                        <li class="nav-item"><a class="nav-link" href="attendance.html"><i class="fas fa-calendar-check me-2"></i> उपस्थिति</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fees.html"><i class="fas fa-file-invoice-dollar me-2"></i> फीस विवरण</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Marksheet.html"><i class="fas fa-poll-h me-2"></i> परीक्षा परिणाम</a></li>
+                        <hr class="mx-3">
+                        <li class="nav-item"><a class="nav-link text-danger" href="login.html"><i class="fas fa-sign-out-alt me-2"></i> लॉगआउट</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <div class="d-flex justify-content-between align-items-center mb-4 bg-white p-3 rounded shadow-sm">
+                    <h4 class="fw-bold mb-0 text-primary">नमस्ते, पिंटू चौधरी! 👋</h4>
+                    <div class="d-flex align-items-center">
+                        <span class="me-3 small text-muted">कक्षा: 12वीं (विज्ञान)</span>
+                        <img src="https://via.placeholder.com/50" class="profile-img shadow-sm">
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-md-4">
+                        <div class="card stat-card p-3 bg-white">
+                            <div class="d-flex align-items-center">
+                                <div class="p-3 bg-primary bg-opacity-10 rounded-circle text-primary me-3"><i class="fas fa-percentage fa-lg"></i></div>
+                                <div>
+                                    <h3 class="mb-0 fw-bold">92%</h3>
+                                    <p class="text-muted small mb-0">कुल उपस्थिति</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card stat-card p-3 bg-white">
+                            <div class="d-flex align-items-center">
+                                <div class="p-3 bg-success bg-opacity-10 rounded-circle text-success me-3"><i class="fas fa-check-double fa-lg"></i></div>
+                                <div>
+                                    <h3 class="mb-0 fw-bold">Paid</h3>
+                                    <p class="text-muted small mb-0">फीस स्टेटस (Q3)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card stat-card p-3 bg-white">
+                            <div class="d-flex align-items-center">
+                                <div class="p-3 bg-warning bg-opacity-10 rounded-circle text-warning me-3"><i class="fas fa-star fa-lg"></i></div>
+                                <div>
+                                    <h3 class="mb-0 fw-bold">A+</h3>
+                                    <p class="text-muted small mb-0">पिछला ग्रेड</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-7">
+                        <div class="card border-0 shadow-sm p-4 h-100">
+                            <h5 class="fw-bold mb-3 border-bottom pb-2 text-primary">गृहकार्य (Homework)</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Physics: Chapter 5 Numerical <span class="badge bg-danger rounded-pill">Pending</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Chemistry: Lab Report <span class="badge bg-success rounded-pill">Completed</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Maths: Calculus Exercise <span class="badge bg-danger rounded-pill">Pending</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card border-0 shadow-sm p-4 h-100 bg-primary text-white">
+                            <h5 class="fw-bold mb-3 border-bottom pb-2">नोटिस बोर्ड</h5>
+                            <p class="small"><i class="fas fa-info-circle me-2"></i> 15 अप्रैल से प्रैक्टिकल परीक्षा शुरू होंगी।</p>
+                            <p class="small"><i class="fas fa-info-circle me-2"></i> कल स्कूल की छुट्टी रहेगी (अंबेडकर जयंती)।</p>
+                            <a href="#" class="btn btn-light btn-sm mt-auto fw-bold">सभी नोटिस देखें</a>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="text-center mt-5 text-muted small">
+                    © 2026 पटेल आदर्श विद्या निकेतन | तकनीकी पार्टनर: <b>PJ SYSTEMS</b>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

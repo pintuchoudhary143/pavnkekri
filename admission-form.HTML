@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patel Adarsh Vidya Niketan | Admission 2026-27</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+         :root {
+            --primary: #1a2a6c;
+            --accent: #fdbb2d;
+            --dark: #121d4a;
+        }
+        
+        body {
+            font-family: 'Hind', sans-serif;
+            background-color: #f8f9fa;
+        }
+        /* Top Bar */
+        
+        .top-bar {
+            background: var(--dark);
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        /* Hero Section */
+        
+        .hero {
+            background: linear-gradient(rgba(26, 42, 108, 0.8), rgba(26, 42, 108, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            border-bottom: 10px solid var(--accent);
+        }
+        /* Utility Styles */
+        
+        .section-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        .card {
+            border-radius: 15px;
+            border: none;
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        /* Floating WhatsApp */
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar text-center">
+        <span><i class="fas fa-phone-alt"></i> +91 92691 65897 | <i class="fas fa-envelope"></i>
+        <a href="mailto:info@pavnkekri.com" class="text-white text-decoration-none"> info@pavnkekri.com</a>
+        </span>
+    </div>
+    <section id="admission-form" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-4 bg-primary text-white p-4 d-flex flex-column justify-content-center text-center">
+                                <i class="fas fa-user-edit fa-4x mb-3"></i>
+                                <h3 class="fw-bold">ऑनलाइन प्रवेश</h3>
+                                <p class="small">सत्र 2026-27 के लिए अपना पंजीकरण आज ही सुनिश्चित करें।</p>
+                                <hr class="bg-white">
+                                <ul class="list-unstyled text-start small">
+                                    <li class="mb-2"><i class="fas fa-check-circle me-2"></i> सुरक्षित भविष्य</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle me-2"></i> अनुभवी शिक्षक</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle me-2"></i> आधुनिक लैब</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-8 bg-white p-4 p-md-5">
+                                <form id="schoolAdmissionForm">
+                                    <h4 class="mb-4 text-primary fw-bold border-bottom pb-2">विद्यार्थी का विवरण</h4>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">पूरा नाम *</label>
+                                            <input type="text" class="form-control" placeholder="विद्यार्थी का नाम" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">पिता का नाम *</label>
+                                            <input type="text" class="form-control" placeholder="पिता का नाम" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">माता का नाम *</label>
+                                            <input type="text" class="form-control" placeholder="माता का नाम" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">लिंग *</label>
+                                            <select class="form-select" required>
+                                            <option value="">लिंग चुनें...</option>
+                                            <option value="male">पुरुष</option>
+                                            <option value="female">महिला</option>
+                                            <option value="other">अन्य</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">राष्ट्रीयता *</label>
+                                            <input type="text" class="form-control" placeholder="राष्ट्रीयता" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">मूल निवासी (गांव/शहर) *</label>
+                                            <input type="text" class="form-control" placeholder="मूल निवासी" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">माता-पिता का व्यवसाय</label>
+                                            <input type="text" class="form-control" placeholder="माता-पिता का व्यवसाय">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">कक्षा (जिसमें प्रवेश चाहिए) *</label>
+                                            <select class="form-select" required>
+                                            <option value="">कक्षा चुनें...</option>
+                                            <option value="1">कक्षा 1</option>
+                                            <option value="2">कक्षा 2</option>
+                                            <option value="3">कक्षा 3</option>
+                                            <option value="4">कक्षा 4</option>
+                                            <option value="5">कक्षा 5</option>
+                                            <option value="6">कक्षा 6</option>
+                                            <option value="7">कक्षा 7</option>
+                                            <option value="8">कक्षा 8</option>
+                                            <option value="9">कक्षा 9</option>
+                                            <option value="10">कक्षा 10</option>
+                                            <option value="11">कक्षा 11 (biology)</option>
+                                            <option value="11-commerce">कक्षा 11 (Commerce)</option>
+                                            <option value="11-arts">कक्षा 11 (Arts)</option>
+                                            <option value="12-science">कक्षा 12 (biology)</option>
+                                            <option value="12-commerce">कक्षा 12 (Commerce)</option>
+                                            <option value="12-arts">कक्षा 12 (Arts)</option>
+                                           
+
+                                        </select>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label fw-bold small">जन्म तिथि *</label>
+                                            <input type="date" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">मोबाइल नंबर (WhatsApp) *</label>
+                                        <input type="tel" class="form-control" placeholder="92691XXXXX" pattern="[0-9]{10}" required title="कृपया 10 अंकों का मोबाइल नंबर डालें">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">ईमेल (यदि हो तो)</label>
+                                        <input type="email" class="form-control" placeholder="your.email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">पिछले विद्यालय का नाम (यदि हो तो)</label>
+                                        <input type="text" class="form-control" placeholder="पिछले विद्यालय का नाम">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">aadhar Number *</label>
+                                        <input type="text" class="form-control" placeholder="1234 5678 9012" pattern="[0-9]{12}" required title="कृपया 12 अंकों का aadhar नंबर डालें">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">रक्त समूह</label>
+                                        <select class="form-select">
+                                        <option value="">रक्त समूह चुनें...</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">जाति (यदि लागू हो)</label>
+                                        <select class="form-select">
+                                        <option value="">जाति चुनें...</option>
+                                        <option value="general">General</option>
+                                        <option value="obc">OBC</option>
+                                        <option value="sc">SC</option>
+                                        <option value="st">ST</option>
+                                        <option value="sbc">SBC</option>
+                                    </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">आपातकालीन संपर्क नंबर *</label>
+                                        <input type="tel" class="form-control" placeholder="92691XXXXX" pattern="[0-9]{10}" required title="कृपया 10 अंकों का मोबाइल नंबर डालें">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">स्वास्थ्य संबंधी जानकारी (यदि कोई हो)</label>
+                                        <textarea class="form-control" rows="3" placeholder="कोई विशेष स्वास्थ्य समस्या या एलर्जी हो तो यहाँ लिखें..."></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">पिता का मोबाइल नंबर</label>
+                                        <input type="tel" class="form-control" placeholder="92691XXXXX" pattern="[0-9]{10}" title="कृपया 10 अंकों का मोबाइल नंबर डालें">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold small">माता का मोबाइल नंबर</label>
+                                        <input type="tel" class="form-control" placeholder="92691XXXXX" pattern="[0-9]{10}" title="कृपया 10 अंकों का मोबाइल नंबर डालें">
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-bold small">स्थायी पता *</label>
+                                        <textarea class="form-control" rows="2" placeholder="अपना पूरा पता यहाँ लिखें..." required></textarea>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label fw-bold smaill'>photo upload</label>
+                                    <input type=" file " class="form-control " accept="image/* ">
+                                </div>
+                                <div class="mb-4 ">
+                                    <label class="form-label fw-bold small ">signature upload</label>
+                                    <input type="file " class="form-control " accept="image/* ">
+                                </div>
+                                <div class="card p-4 shadow-sm border-primary ">
+    <h5 class="text-primary mb-3 "><i class="fas fa-shield-alt "></i> मोबाइल/ईमेल वेरिफिकेशन</h5>
+    
+    <div id="otpInputGroup ">
+        <div class="input-group mb-3 ">
+            <input type="text " id="userContact " class="form-control " placeholder="अपना मोबाइल/ईमेल डालें ">
+            <button class="btn btn-primary " type="button " onclick="sendOTP() ">OTP भेजें</button>
+        </div>
+    </div>
+
+    <div id="verifyGroup " style="display:none; ">
+        <p class="small text-muted ">आपके द्वारा दिए गए नंबर/ईमेल पर OTP भेजा गया है।</p>
+        <div class="input-group mb-3 ">
+            <input type="text " id="enteredOTP " class="form-control " placeholder="6 अंकों का OTP डालें ">
+            <button class="btn btn-success " type="button " onclick="verifyOTP() ">Verify</button>
+        </div>
+        <div id="otpStatus "></div>
+    </div>
+</div>
+
+<script>
+    let generatedOTP = " ";
+
+    function sendOTP() {
+        const contact = document.getElementById('userContact').value;
+        if(contact.length < 10) {
+            alert("कृपया सही मोबाइल या ईमेल डालें ");
+            return;
+        }
+
+        // 6 अंकों का OTP जेनरेट करें
+        generatedOTP = Math.floor(100000 + Math.random() * 900000).toString();
+        
+        // असलियत में यहाँ API Call होगी (जैसे Twilio या EmailJS)
+        alert("PJ Systems Demo: आपका OTP " + generatedOTP + " है। "); 
+
+        // इंटरफ़ेस बदलें
+        document.getElementById('otpInputGroup').style.opacity = "0.5 ";
+        document.getElementById('verifyGroup').style.display = "block ";
+    }
+
+    function verifyOTP() {
+        const userOTP = document.getElementById('enteredOTP').value;
+        const status = document.getElementById('otpStatus');
+
+        if(userOTP === generatedOTP) {
+            status.innerHTML = '<b class="text-success "><i class="fas fa-check-circle "></i> वेरिफिकेशन सफल! अब आप फॉर्म सबमिट कर सकते हैं।</b>';
+            document.getElementById('verifyGroup').style.display = "none ";
+            // यहाँ आप Submit बटन को Enable कर सकते हैं
+        } else {
+            status.innerHTML = '<b class="text-danger ">गलत OTP, कृपया पुनः प्रयास करें।</b>';
+        }
+    }
+</script>
+                                <div class="mb-4 ">
+                                    <label class="form-label fw-bold small ">OTP</label>
+                                    <input type="text " class="form-control " placeholder="OTP डालें " required>
+                                </div>
+
+                                <div class="mb-4 form-check ">
+                                    <input type="checkbox " class="form-check-input " required>
+                                    <label class="form-check-label small ">मैं पुष्टि करता हूँ कि ऊपर दिया गया विवरण सही है और मैं प्रवेश नियमों को स्वीकार करता हूँ।</label>
+                                </div>
+                                <div class="mb-4 form-check ">
+                                    <input type="checkbox " class="form-check-input " required>
+                                    <label class="form-check-label small ">मैं सहमत हूँ कि विद्यालय मेरे द्वारा प्रदान की गई जानकारी को प्रवेश प्रक्रिया के लिए उपयोग कर सकता है।</label>
+                                </div>
+                                <div class="mb-4 form-check ">
+                                    <input type="checkbox " class="form-check-input " required>
+                                    <label class="form-check-label small ">मैं सहमत हूँ कि विद्यालय मेरे बच्चे की तस्वीर और विवरण को प्रचार सामग्री में उपयोग कर सकता है।</label>
+                                </div>
+
+                                <button type="submit " class="btn btn-primary w-100 fw-bold py-2 shadow ">
+                                    आवेदन सबमिट करें <i class="fas fa-paper-plane ms-2 "></i>
+                                </button>
+                            </form>
+
+                            <div id="formResponse " class="alert alert-success d-none mt-3 text-center ">
+                                <i class="fas fa-check-circle fa-2x mb-2 "></i><br>
+                                <strong>बधाई हो!</strong> आपका आवेदन सफलतापूर्वक प्राप्त हो गया है। विद्यालय कार्यालय आपसे जल्द संपर्क करेगा।
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript " src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js "></script>
+<script type="text/javascript ">
+   (function(){
+      emailjs.init("YOUR_PUBLIC_KEY "); // यहाँ अपनी Public Key डालें
+   })();
+async function sendOTP() {
+    const userEmail = document.getElementById('userEmail').value;
+    const otpBtn = document.getElementById('sendOtpBtn');
+
+    if (!userEmail.includes("@ ")) {
+        alert("कृपया सही ईमेल एड्रेस डालें! ");
+        return;
+    }
+
+    // 6 अंकों का OTP बनाना
+    generatedOTP = Math.floor(100000 + Math.random() * 900000).toString();
+    
+    otpBtn.innerHTML = '<span class="spinner-border spinner-border-sm "></span> भेज रहे हैं...';
+    otpBtn.disabled = true;
+
+    // EmailJS के जरिए ईमेल भेजना
+    const templateParams = {
+        to_email: userEmail,
+        otp_code: generatedOTP,
+        school_name: "पटेल आदर्श विद्या निकेतन "
+    };
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function() {
+            alert("सफलता! OTP आपके ईमेल पर भेज दिया गया है। ");
+            document.getElementById('otpVerifySection').style.display = 'block';
+            otpBtn.innerHTML = 'OTP पुनः भेजें';
+            otpBtn.disabled = false;
+        }, function(error) {
+            alert("भेजने में विफल: " + JSON.stringify(error));
+            otpBtn.innerHTML = 'फिर से कोशिश करें';
+            otpBtn.disabled = false;
+        });
+}
+
+function verifyOTP() {
+    const enteredOTP = document.getElementById('userOtpInput').value;
+    const submitBtn = document.getElementById('finalSubmitBtn');
+
+    if (enteredOTP === generatedOTP) {
+        alert("वेरिफिकेशन सफल! अब आप फॉर्म जमा कर सकते हैं। ");
+        submitBtn.disabled = false;
+        document.getElementById('otpVerifySection').innerHTML = '<b class="text-success "><i class="fas fa-check-circle "></i> ईमेल सत्यापित है!</b>';
+    } else {
+        alert("गलत OTP! कृपया सही कोड डालें। ");
+    }
+}
+</script>
+    <a href="https://wa.me/919269165897 " class="whatsapp-float " target="_blank ">
+        <i class="fab fa-whatsapp "></i>
+    </a>
+
+</body>
+</html>

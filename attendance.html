@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance | PAVN School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+         :root {
+            --present: #28a745;
+            --absent: #dc3545;
+            --holiday: #ffc107;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .attendance-card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .progress {
+            height: 10px;
+            border-radius: 10px;
+        }
+        /* Calendar UI */
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+        
+        .day {
+            padding: 15px 5px;
+            border-radius: 12px;
+            background: white;
+            font-weight: bold;
+            border: 1px solid #eee;
+            position: relative;
+        }
+        
+        .day.present {
+            background: rgba(40, 167, 69, 0.1);
+            color: var(--present);
+            border-color: var(--present);
+        }
+        
+        .day.absent {
+            background: rgba(220, 53, 69, 0.1);
+            color: var(--absent);
+            border-color: var(--absent);
+        }
+        
+        .day.holiday {
+            background: rgba(255, 193, 7, 0.1);
+            color: #856404;
+            border-color: var(--holiday);
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-md-12 text-center">
+                <h2 class="fw-bold text-primary">उपस्थिति रिपोर्ट - अप्रैल 2026</h2>
+                <p class="text-muted">छात्र: पिंटू चौधरी | कक्षा: 12वीं विज्ञान</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card attendance-card p-4 h-100 bg-white">
+                    <h5 class="fw-bold mb-4">सारांश (Summary)</h5>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1 small">
+                            <span>कुल उपस्थिति</span>
+                            <span class="fw-bold text-success">92%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
+                            <span><span class="status-dot bg-success"></span> वर्तमान (Present)</span>
+                            <span class="fw-bold">24 दिन</span>
+                        </li>
+                        <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
+                            <span><span class="status-dot bg-danger"></span> अनुपस्थित (Absent)</span>
+                            <span class="fw-bold text-danger">02 दिन</span>
+                        </li>
+                        <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
+                            <span><span class="status-dot bg-warning"></span> अवकाश (Holiday)</span>
+                            <span class="fw-bold text-warning">04 दिन</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary w-100 mt-auto rounded-pill">लीव एप्लीकेशन भरें</button>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="card attendance-card p-4 bg-white">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="fw-bold m-0"><i class="fas fa-calendar-alt text-primary me-2"></i>कैलेंडर व्यू</h5>
+                        <div class="small">
+                            <span class="me-2"><i class="fas fa-circle text-success small"></i> P</span>
+                            <span class="me-2"><i class="fas fa-circle text-danger small"></i> A</span>
+                            <span><i class="fas fa-circle text-warning small"></i> H</span>
+                        </div>
+                    </div>
+
+                    <div class="calendar-grid">
+                        <div class="text-muted small fw-bold">सोम</div>
+                        <div class="text-muted small fw-bold">मंगल</div>
+                        <div class="text-muted small fw-bold">बुध</div>
+                        <div class="text-muted small fw-bold">गुरु</div>
+                        <div class="text-muted small fw-bold">शुक्र</div>
+                        <div class="text-muted small fw-bold">शनि</div>
+                        <div class="text-muted small fw-bold">रवि</div>
+
+                        <div class="day present">1</div>
+                        <div class="day present">2</div>
+                        <div class="day present">3</div>
+                        <div class="day holiday">4</div>
+                        <div class="day absent">5</div>
+                        <div class="day present">6</div>
+                        <div class="day holiday">7</div>
+                        <div class="day present">8</div>
+                        <div class="day present">9</div>
+                        <div class="day present">10</div>
+                        <div class="day present">11</div>
+                        <div class="day present">12</div>
+                        <div class="day present">13</div>
+                        <div class="day holiday">14</div>
+                        <div class="day present">15</div>
+                        <div class="day absent">16</div>
+                        <div class="day present">17</div>
+                        <div class="day present">18</div>
+                        <div class="day present">19</div>
+                        <div class="day present">20</div>
+                        <div class="day holiday">21</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-5 text-center text-muted small">
+            तकनीकी सहायता: <b>PJ SYSTEMS</b>
+        </footer>
+    </div>
+
+</body>
+
+</html>
